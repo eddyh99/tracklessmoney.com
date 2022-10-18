@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+ob_start();
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +24,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = "https://bankofsatoshi.vip/";
-date_default_timezone_set('Asia/Makassar');
+$config['base_url'] = 'http://localhost/tracklessmoney.com/';
+date_default_timezone_set('Asia/Singapore');
 
 /*
 |--------------------------------------------------------------------------
@@ -101,7 +102,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -449,12 +450,14 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-$config['csrf_protection'] = FALSE;
-$config['csrf_token_name'] = 'csrf_test_name';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = 'csrf_piggy';
+$config['csrf_cookie_name'] = 'csrf_cookie_piggy';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
-$config['csrf_exclude_uris'] = array();
+$config['csrf_exclude_uris'] = array(
+
+    );
 
 /*
 |--------------------------------------------------------------------------
@@ -522,17 +525,3 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
-$config['staging']=true;
-$config['api_staging']="f264a520-16d9-4c1c-b91e-bded67438f57";
-$config['api_production']="85f29878-629f-4b46-83cc-03f395281ed5";  
-$config['profile_staging']="16324768";
-$config['profile_production']="24407990";  
-$config['sandbox']=array(
-        "url-quote"     => "https://api.sandbox.transferwise.tech/v2/quotes",
-        "url-profile"   => "https://api.sandbox.transferwise.tech/v2/profiles/"
-    );  
-$config['production']=array(
-        "url-quote"     => "https://api.transferwise.com/v2/quotes",
-        "url-profile"   => "https://api.transferwise.com/v2/profiles/"
-    );  

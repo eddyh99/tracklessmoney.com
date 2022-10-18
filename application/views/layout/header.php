@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title><?= $title?></title>
-  
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link rel="icon" href="<?=base_url()?>assets/images/shieldlogo.png" type="image/png" sizes="16x16">
+    <title><?=$title?></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-  <!--Google Fonts-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarpanch&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap">
-  
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?=base_url()?>/assets/dist/custom/style.css">
-
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="<?= base_url();?>assets/css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <!--Desktop Version-->
-    <div class="wrapper d-none d-md-block"  style="background:#0d0d0d">
+
+<body class="bg-black">
+    <div class="wrapper">

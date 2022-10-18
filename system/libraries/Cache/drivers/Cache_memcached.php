@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2019 - 2022, CodeIgniter Foundation
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +29,9 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @copyright	Copyright (c) 2019 - 2022, CodeIgniter Foundation (https://codeigniter.com/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 2.0
  * @filesource
@@ -155,4 +156,159 @@ class CI_Cache_memcached extends CI_Driver {
 	 * @param	bool	$raw	Whether to store the raw value
 	 * @return	bool	TRUE on success, FALSE on failure
 	 */
-	public function save($id, $data, $t
+	public function save($id, $data, $ttl = 60, $raw = FALSE)
+	{
+		if ($raw !== TRUE)
+		{
+			$data = array($data, time(), $ttl);
+		}
+
+		if ($this->_memcached instanceof Memcached)
+		{
+			return $this->_memcached->set($id, $data, $ttl);
+		}
+		elseif ($this->_memcached instanceof Memcache)
+		{
+			return $this->_memcached->set($id, $data, 0, $ttl);
+		}
+
+		return FALSE;
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Delete from Cache
+	 *
+	 * @param	mixed	$id	key to be deleted.
+	 * @return	bool	true on success, false on failure
+	 */
+	public function delete($id)
+	{
+		return $this->_memcached->delete($id);
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Increment a raw value
+	 *
+	 * @param	string	$id	Cache ID
+	 * @param	int	$offset	Step/value to add
+	 * @return	mixed	New value on success or FALSE on failure
+	 */
+	public function increment($id, $offset = 1)
+	{
+		if (($result = $this->_memcached->increment($id, $offset)) === FALSE)
+		{
+			return $this->_memcached->add($id, $offset) ? $offset : FALSE;
+		}
+
+		return $result;
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Decrement a raw value
+	 *
+	 * @param	string	$id	Cache ID
+	 * @param	int	$offset	Step/value to reduce by
+	 * @return	mixed	New value on success or FALSE on failure
+	 */
+	public function decrement($id, $offset = 1)
+	{
+		if (($result = $this->_memcached->decrement($id, $offset)) === FALSE)
+		{
+			return $this->_memcached->add($id, 0) ? 0 : FALSE;
+		}
+
+		return $result;
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Clean the Cache
+	 *
+	 * @return	bool	false on failure/true on success
+	 */
+	public function clean()
+	{
+		return $this->_memcached->flush();
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Cache Info
+	 *
+	 * @return	mixed	array on success, false on failure
+	 */
+	public function cache_info()
+	{
+		return $this->_memcached->getStats();
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Get Cache Metadata
+	 *
+	 * @param	mixed	$id	key to get cache metadata on
+	 * @return	mixed	FALSE on failure, array on success.
+	 */
+	public function get_metadata($id)
+	{
+		$stored = $this->_memcached->get($id);
+
+		if (count($stored) !== 3)
+		{
+			return FALSE;
+		}
+
+		list($data, $time, $ttl) = $stored;
+
+		return array(
+			'expire'	=> $time + $ttl,
+			'mtime'		=> $time,
+			'data'		=> $data
+		);
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Is supported
+	 *
+	 * Returns FALSE if memcached is not supported on the system.
+	 * If it is, we setup the memcached object & return TRUE
+	 *
+	 * @return	bool
+	 */
+	public function is_supported()
+	{
+		return (extension_loaded('memcached') OR extension_loaded('memcache'));
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Class destructor
+	 *
+	 * Closes the connection to Memcache(d) if present.
+	 *
+	 * @return	void
+	 */
+	public function __destruct()
+	{
+		if ($this->_memcached instanceof Memcache)
+		{
+			$this->_memcached->close();
+		}
+		elseif ($this->_memcached instanceof Memcached && method_exists($this->_memcached, 'quit'))
+		{
+			$this->_memcached->quit();
+		}
+	}
+}
