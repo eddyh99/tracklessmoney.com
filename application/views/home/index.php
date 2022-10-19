@@ -5,7 +5,8 @@
             <a class="navbar-brand fw-bold" href="#page-top">
                 <img src="<?= base_url(); ?>assets/images/tc-money-new.png">
             </a>
-            <button class="navbar-toggler toggler-trackless" type="button" data-bs-toggle="offcanvas" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler toggler-trackless" type="button" data-bs-toggle="offcanvas"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 Menu
                 <i class="bi-list"></i>
             </button>
@@ -18,17 +19,24 @@
                     <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://tracklessproject.com" class="bg-trackless nav-link me-lg-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <svg width="57" height="53" viewBox="0 0 57 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.908 1.37204C27.8784 0.750986 29.1214 0.750986 30.0918 1.37204L54.7011 17.122C56.0749 18.0012 56.4758 19.8276 55.5966 21.2013C54.7174 22.575 52.8911 22.9759 51.5174 22.0967L49.1717 20.5955V44.2188C49.1717 48.568 45.646 52.0938 41.2967 52.0938H15.703C11.3538 52.0938 7.828 48.568 7.828 44.2188V20.5955L5.48239 22.0967C4.10868 22.9759 2.28235 22.575 1.40317 21.2013C0.523991 19.8276 0.924893 18.0012 2.29861 17.122L26.908 1.37204ZM19.1483 24.0391C18.3328 24.0391 17.6717 24.7001 17.6717 25.5156C17.6717 26.3311 18.3328 26.9922 19.1483 26.9922H37.8514C38.6669 26.9922 39.328 26.3311 39.328 25.5156C39.328 24.7001 38.6669 24.0391 37.8514 24.0391H19.1483ZM17.6717 31.4219C17.6717 30.6064 18.3328 29.9453 19.1483 29.9453H27.0233C27.8388 29.9453 28.4999 30.6064 28.4999 31.4219C28.4999 32.2374 27.8388 32.8984 27.0233 32.8984H19.1483C18.3328 32.8984 17.6717 32.2374 17.6717 31.4219ZM19.1483 35.8516C18.3328 35.8516 17.6717 36.5126 17.6717 37.3281C17.6717 38.1436 18.3328 38.8047 19.1483 38.8047H30.9608C31.7763 38.8047 32.4374 38.1436 32.4374 37.3281C32.4374 36.5126 31.7763 35.8516 30.9608 35.8516H19.1483Z" fill="#00DD9C" />
+                        <a href="https://tracklessproject.com" class="bg-trackless nav-link me-lg-3"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <svg width="57" height="53" viewBox="0 0 57 53" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.908 1.37204C27.8784 0.750986 29.1214 0.750986 30.0918 1.37204L54.7011 17.122C56.0749 18.0012 56.4758 19.8276 55.5966 21.2013C54.7174 22.575 52.8911 22.9759 51.5174 22.0967L49.1717 20.5955V44.2188C49.1717 48.568 45.646 52.0938 41.2967 52.0938H15.703C11.3538 52.0938 7.828 48.568 7.828 44.2188V20.5955L5.48239 22.0967C4.10868 22.9759 2.28235 22.575 1.40317 21.2013C0.523991 19.8276 0.924893 18.0012 2.29861 17.122L26.908 1.37204ZM19.1483 24.0391C18.3328 24.0391 17.6717 24.7001 17.6717 25.5156C17.6717 26.3311 18.3328 26.9922 19.1483 26.9922H37.8514C38.6669 26.9922 39.328 26.3311 39.328 25.5156C39.328 24.7001 38.6669 24.0391 37.8514 24.0391H19.1483ZM17.6717 31.4219C17.6717 30.6064 18.3328 29.9453 19.1483 29.9453H27.0233C27.8388 29.9453 28.4999 30.6064 28.4999 31.4219C28.4999 32.2374 27.8388 32.8984 27.0233 32.8984H19.1483C18.3328 32.8984 17.6717 32.2374 17.6717 31.4219ZM19.1483 35.8516C18.3328 35.8516 17.6717 36.5126 17.6717 37.3281C17.6717 38.1436 18.3328 38.8047 19.1483 38.8047H30.9608C31.7763 38.8047 32.4374 38.1436 32.4374 37.3281C32.4374 36.5126 31.7763 35.8516 30.9608 35.8516H19.1483Z"
+                                    fill="#00DD9C" />
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <button type="button" class="btn-close close-trackless" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close close-trackless" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
@@ -43,8 +51,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://tracklessproject.com">
-                                <svg width="57" height="53" viewBox="0 0 57 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.908 1.37204C27.8784 0.750986 29.1214 0.750986 30.0918 1.37204L54.7011 17.122C56.0749 18.0012 56.4758 19.8276 55.5966 21.2013C54.7174 22.575 52.8911 22.9759 51.5174 22.0967L49.1717 20.5955V44.2188C49.1717 48.568 45.646 52.0938 41.2967 52.0938H15.703C11.3538 52.0938 7.828 48.568 7.828 44.2188V20.5955L5.48239 22.0967C4.10868 22.9759 2.28235 22.575 1.40317 21.2013C0.523991 19.8276 0.924893 18.0012 2.29861 17.122L26.908 1.37204ZM19.1483 24.0391C18.3328 24.0391 17.6717 24.7001 17.6717 25.5156C17.6717 26.3311 18.3328 26.9922 19.1483 26.9922H37.8514C38.6669 26.9922 39.328 26.3311 39.328 25.5156C39.328 24.7001 38.6669 24.0391 37.8514 24.0391H19.1483ZM17.6717 31.4219C17.6717 30.6064 18.3328 29.9453 19.1483 29.9453H27.0233C27.8388 29.9453 28.4999 30.6064 28.4999 31.4219C28.4999 32.2374 27.8388 32.8984 27.0233 32.8984H19.1483C18.3328 32.8984 17.6717 32.2374 17.6717 31.4219ZM19.1483 35.8516C18.3328 35.8516 17.6717 36.5126 17.6717 37.3281C17.6717 38.1436 18.3328 38.8047 19.1483 38.8047H30.9608C31.7763 38.8047 32.4374 38.1436 32.4374 37.3281C32.4374 36.5126 31.7763 35.8516 30.9608 35.8516H19.1483Z" fill="#00DD9C" />
+                                <svg width="57" height="53" viewBox="0 0 57 53" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M26.908 1.37204C27.8784 0.750986 29.1214 0.750986 30.0918 1.37204L54.7011 17.122C56.0749 18.0012 56.4758 19.8276 55.5966 21.2013C54.7174 22.575 52.8911 22.9759 51.5174 22.0967L49.1717 20.5955V44.2188C49.1717 48.568 45.646 52.0938 41.2967 52.0938H15.703C11.3538 52.0938 7.828 48.568 7.828 44.2188V20.5955L5.48239 22.0967C4.10868 22.9759 2.28235 22.575 1.40317 21.2013C0.523991 19.8276 0.924893 18.0012 2.29861 17.122L26.908 1.37204ZM19.1483 24.0391C18.3328 24.0391 17.6717 24.7001 17.6717 25.5156C17.6717 26.3311 18.3328 26.9922 19.1483 26.9922H37.8514C38.6669 26.9922 39.328 26.3311 39.328 25.5156C39.328 24.7001 38.6669 24.0391 37.8514 24.0391H19.1483ZM17.6717 31.4219C17.6717 30.6064 18.3328 29.9453 19.1483 29.9453H27.0233C27.8388 29.9453 28.4999 30.6064 28.4999 31.4219C28.4999 32.2374 27.8388 32.8984 27.0233 32.8984H19.1483C18.3328 32.8984 17.6717 32.2374 17.6717 31.4219ZM19.1483 35.8516C18.3328 35.8516 17.6717 36.5126 17.6717 37.3281C17.6717 38.1436 18.3328 38.8047 19.1483 38.8047H30.9608C31.7763 38.8047 32.4374 38.1436 32.4374 37.3281C32.4374 36.5126 31.7763 35.8516 30.9608 35.8516H19.1483Z"
+                                        fill="#00DD9C" />
                                 </svg>
                             </a>
                         </li>
@@ -55,7 +66,7 @@
     </nav>
     <div class="container px-5 py-5">
         <div class="row gx-5 align-items-center">
-            <div class="col-lg-8">
+            <div class="col-md-12 col-lg-8">
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
                     <h1 class="text-green-trackless text-green-trackless--header f-rhd mb-3">Next Generation
@@ -64,23 +75,20 @@
                         technology</p>
                 </div>
             </div>
-            <div class="col-lg-4 d-none d-sm-none d-lg-inline">
-                <!-- Masthead device mockup feature-->
-                <div class="masthead-device-mockup text-center">
-                </div>
-            </div>
         </div>
     </div>
 </header>
-<section class="bg-black my-5">
+<section class="bg-black my-sm-0 my-md-5 mt-5 mb-0">
     <div class="container px-5">
-        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            <div class="col-sm-8 col-md-6">
+        <div
+            class="row gx-5 align-items-center justify-content-center justify-content-md-start justify-content-lg-between">
+            <div class="d-none d-sm-none d-md-none d-lg-block col-lg-6">
                 <div class="px-5 px-sm-0">
-                    <img class="img-fluid" style="object-fit: cover; height: 500px; width: 500px;" src="<?= base_url(); ?>/assets/images/bumi-trackless.png" alt="..." />
+                    <img class="img-fluid" style="object-fit: cover; height: 500px; width: 500px;"
+                        src="<?= base_url(); ?>/assets/images/bumi-trackless.png" alt="..." />
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-white">
+            <div class="col-12 col-md-10 col-lg-6 text-white">
                 <p class="content-title-top f-roboto my-2">
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.58167" cy="6.17542" r="5.38489" fill="#C4C4C4" />
@@ -101,10 +109,11 @@
     </div>
 </section>
 
-<section class="bg-content-line py-5">
+<section class="bg-content-line pt-0 pb-5 py-sm-0 py-md-0 py-lg-5 ">
     <div class="container px-5">
-        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            <div class="col-12 col-lg-6 text-white">
+        <div
+            class="row gx-5 align-items-center justify-content-center justify-content-md-start justify-content-lg-between">
+            <div class="col-12 col-md-10 col-lg-8 text-white pb-md-5">
                 <p class="content-title-top f-roboto my-4">
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.58167" cy="6.17542" r="5.38489" fill="#C4C4C4" />
@@ -112,7 +121,7 @@
                     &nbsp;
                     WHAT WE DO</span>
                 </p>
-                <p class="content-info f-roboto mb-5 mb-lg-0">
+                <p class="content-info f-roboto mb-0 mb-sm-0 mb-md-5 mb-lg-0">
                     In addiction to provide API/Plugin, thanks to the cooperation with highly qualified partners, we can
                     carry out projects with innovative technologies according to customer requests and optimize them to
                     increase business, visibility and simplify collection and payment processes.<br>
@@ -122,17 +131,19 @@
 
                 <a href="#" class="btn btn-green my-5 px-5 py-2">Apply now</a>
             </div>
-            <div class="col-sm-8 col-md-6">
+            <div class="col-md-2 col-lg-4">
             </div>
-            <div class="col-sm-8 col-md-6">
+            <div class="col-md-2 col-lg-6">
             </div>
-            <div class="col-12 col-lg-6 text-white">
-                <div class="box-money p-5">
-                    <img src="<?= base_url() ?>assets/images/bola-aneh.png" alt="logo" class="ball-light-top">
+            <div class="col-12 col-md-10 col-lg-6 text-white">
+                <div class="box-money py-5 px-4 p-sm-5">
+                    <img src="<?= base_url() ?>assets/images/bola-aneh.png" alt="logo"
+                        class="ball-light-top d-none d-lg-inline">
                     <img src="<?= base_url() ?>assets/images/bola-aneh.png" alt="logo" class="ball-light-bottom">
                     <img src="<?= base_url() ?>assets/images/tc-money-new.png" alt="logo" class="img-in-box">
                     <p class="content-info f-roboto mb-5 mb-lg-3">
-                        Send an email with your project description and our experts will contact you as soon as possible
+                        Send an email with your project description and our experts will contact you as soon as
+                        possible
                     </p>
                     <a href="#" class="content-info f-roboto mail">linkemail@gmail.com</a>
                 </div>
@@ -144,8 +155,9 @@
                     <img src="<?= base_url() ?>assets/images/tc-money-new.png" alt="logo">
                 </div>
                 <div class="sponsor-money d-flex justify-content-center flex-wrap my-5 pb-5">
-                    <div class="box-sponsor rounded-circle mx-3 mb-3 p-4">
-                        <img src="<?= base_url() ?>assets/images/sponsor1.png" alt="logo" class="py-2 px-4">
+                    <div class="box-sponsor rounded-circle mx-2 mb-2 mx-sm-3 mb-sm-3 p-2 p-sm-3 p-md-4">
+                        <img src="<?= base_url() ?>assets/images/sponsor1.png" alt="logo"
+                            class="py-1 px-2 py-sm-1 px-sm-2 py-md-2 px-md-4">
                     </div>
                 </div>
             </div>
@@ -204,5 +216,4 @@
             <a href="https://tracklessmoney.com" class="active">TracklessMoney</a>
         </div>
     </div>
-</footer>>
 </footer>
