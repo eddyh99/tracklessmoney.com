@@ -13225,6 +13225,52 @@ footer a:focus {
 
 @media (max-width: 575px) {
 
+  .log-logo img {
+    height: 75px;
+  }
+
+  .log-logo span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    color: #00DD9C;
+    display: block;
+  }
+
+  .download-api a {
+    text-decoration: none;
+    background: #00DD9C;
+    border-radius: 17px;
+    min-width: 200px;
+
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+
+  .download-plus {
+    text-decoration: none;
+  }
+
+  .download-plus img {
+    height: 75px;
+  }
+
+  .apiplugin-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    color: #fff;
+  }
+
+  .close-back {
+    position: absolute;
+    right: 10%;
+    top: 2.5%;
+  }
+
   /* Money */
   .content-title-top {
     font-weight: 700;
@@ -13632,6 +13678,51 @@ footer a:focus {
 }
 
 @media (min-width: 576px) {
+  .log-logo img {
+    height: 75px;
+  }
+
+  .log-logo span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    color: #00DD9C;
+    display: block;
+  }
+
+  .download-api a {
+    text-decoration: none;
+    background: #00DD9C;
+    border-radius: 17px;
+    min-width: 200px;
+
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+
+  .download-plus {
+    text-decoration: none;
+  }
+
+  .download-plus img {
+    height: 75px;
+  }
+
+  .apiplugin-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    color: #fff;
+  }
+
+  .close-back {
+    position: absolute;
+    right: 10%;
+    top: 2.5%;
+  }
 
   /* Money */
   .content-title-top {
@@ -14504,9 +14595,9 @@ footer a:focus {
 
   .ball-light-top {
     position: absolute;
-    top: -55%;
-    right: -30%;
-    height: 300px;
+    top: -50%;
+    right: -10%;
+    height: 200px;
   }
 
   /* Bank */
@@ -14826,6 +14917,53 @@ footer a:focus {
 }
 
 @media (min-width: 1200px) {
+
+  .log-logo img {
+    height: 150px;
+  }
+
+  .log-logo span {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 110%;
+    color: #00DD9C;
+    display: block;
+  }
+
+  .download-api a {
+    text-decoration: none;
+    background: #00DD9C;
+    border-radius: 17px;
+    min-width: 200px;
+
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 110%;
+  }
+
+
+  .download-plus {
+    text-decoration: none;
+  }
+
+  .download-plus img {
+    height: 100px;
+  }
+
+  .apiplugin-text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 180%;
+    color: #fff;
+  }
+
+  .close-back {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+  }
+
   .content-title-top {
     font-weight: 700;
     font-size: 16.1547px;
@@ -14919,9 +15057,10 @@ footer a:focus {
 
   .ball-light-top {
     position: absolute;
-    top: -55%;
-    right: -30%;
-    height: 300px;
+    top: -50%;
+    right: -10%;
+    height: 200px;
+
   }
 
   /* BANK */
@@ -15293,6 +15432,51 @@ footer a:focus {
 }
 
 @media (min-width: 1400px) {
+  .log-logo img {
+    height: 150px;
+  }
+
+  .log-logo span {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 110%;
+    color: #00DD9C;
+    display: block;
+  }
+
+  .download-api a {
+    text-decoration: none;
+    background: #00DD9C;
+    border-radius: 17px;
+    min-width: 200px;
+
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 110%;
+  }
+
+
+  .download-plus {
+    text-decoration: none;
+  }
+
+  .download-plus img {
+    height: 100px;
+  }
+
+  .apiplugin-text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 180%;
+    color: #fff;
+  }
+
+  .close-back {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
 
 
   .box-form-rpw {

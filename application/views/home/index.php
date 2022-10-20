@@ -12,16 +12,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#">MISSION</a>
+                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#mission">MISSION</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#">SERVICE</a>
+                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#service">SERVICE</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#">CONTACT</a>
+                    <li class="nav-item"><a class="nav-link me-lg-3 mt-lg-3 text-white" href="#contact">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://tracklessproject.com" class="bg-trackless nav-link me-lg-3"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                            aria-controls="offcanvasNavbar">
+                        <a href="https://tracklessproject.com" class="bg-trackless nav-link me-lg-3">
                             <svg width="57" height="53" viewBox="0 0 57 53" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -41,13 +39,13 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">MISSION</a>
+                            <a class="nav-link" aria-current="page" href="#mission">MISSION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICE</a>
+                            <a class="nav-link" href="#service">SERVICE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://tracklessproject.com">
@@ -89,7 +87,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-10 col-lg-6 text-white">
-                <p class="content-title-top f-roboto my-2">
+                <p class="content-title-top f-roboto my-2" id="mission">
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.58167" cy="6.17542" r="5.38489" fill="#C4C4C4" />
                     </svg>
@@ -102,7 +100,7 @@
                     transactions and can be used by both, companies and individuals via API/Plugin.</p>
                 <div class="box-btn-green my-5 p-3 text-center">
                     <p>Connect your phisycal or online bussines now</p>
-                    <a href="#" class="btn btn-green px-4 py-2">API/Plugin</a>
+                    <a href="<?= base_url('auth/api_plugin'); ?>" class="btn btn-green px-4 py-2">API/Plugin</a>
                 </div>
             </div>
         </div>
@@ -114,7 +112,7 @@
         <div
             class="row gx-5 align-items-center justify-content-center justify-content-md-start justify-content-lg-between">
             <div class="col-12 col-md-10 col-lg-8 text-white pb-md-5">
-                <p class="content-title-top f-roboto my-4">
+                <p class="content-title-top f-roboto my-4" id="service">
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.58167" cy="6.17542" r="5.38489" fill="#C4C4C4" />
                     </svg>
@@ -200,7 +198,7 @@
                     </div>
                 </div>
                 <div class="col-4">&nbsp;</div>
-                <div class="col-4 footer-contact">
+                <div class="col-4 footer-contact" id="contact">
                     <h2>Contact us</h2>
                     <span>Telegramchanel</span>
                 </div>
