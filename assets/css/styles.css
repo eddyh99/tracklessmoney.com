@@ -13207,6 +13207,11 @@ footer a:focus {
   height: 150px;
 }
 
+.sponsor-money a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .ball-light-bottom {
   position: absolute;
   bottom: -40%;

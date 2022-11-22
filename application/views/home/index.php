@@ -152,11 +152,14 @@
                     <span class="f-monserat py-4">Powered by </span>
                     <img src="<?= base_url() ?>assets/images/tc-money-new.png" alt="logo">
                 </div>
-                <div class="sponsor-money d-flex justify-content-center flex-wrap my-5 pb-5">
-                    <div class="box-sponsor rounded-circle mx-2 mb-2 mx-sm-3 mb-sm-3 p-2 p-sm-3 p-md-4">
-                        <img src="<?= base_url() ?>assets/images/sponsor1.png" alt="logo"
-                            class="py-1 px-2 py-sm-1 px-sm-2 py-md-2 px-md-4">
-                    </div>
+                <div class="sponsor-money d-flex justify-content-center flex-wrap my-5 pb-5 text-center">
+                    <a href="#" class="mx-2 mb-2 mx-sm-3 mb-sm-3 p-2 p-sm-3 p-md-4">
+                        <div class="box-sponsor rounded-circle p-2 p-sm-3 p-md-4">
+                            <img src="<?= base_url() ?>assets/images/sponsor1.png" alt="logo"
+                                class="py-1 px-2 py-sm-1 px-sm-2 py-md-2 px-md-4">
+                        </div>
+                        <span class="mt-3 d-block">Coming soon</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -204,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-wrap justify-content-end footer-menus text-white" translate="no">
+        <div class="d-flex flex-wrap justify-content-end footer-menus" translate="no">
             <a href="https://tracklessproject.com" class="">TracklessProject</a> |
             <a href="https://tracklessmail.com" class="">TracklessMail</a> |
             <a href="https://tracklesschat.com" class="">TracklessChat</a> |
