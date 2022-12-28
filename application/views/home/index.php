@@ -150,7 +150,7 @@
             <div class="col-12 mt-5">
                 <div class="powered-money d-flex justify-content-center">
                     <span class="f-monserat py-4">Powered by </span>
-                    <img src="<?= base_url() ?>assets/images/logo-new.png" alt="logo">
+                    <img src="<?= base_url() ?>assets/images/tracklessproject.png" alt="logo">
                 </div>
                 <div class="sponsor-money d-flex justify-content-center flex-wrap my-5 pb-5 text-center">
                     <a href="#" class="mx-2 mb-2 mx-sm-3 mb-sm-3 p-2 p-sm-3 p-md-4">
